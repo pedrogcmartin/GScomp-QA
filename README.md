@@ -24,6 +24,18 @@ The dataset comprises **331 video stimuli** generated from **13 real-world scene
 
 Beyond subjective evaluation, GScomp-QA also supports the analysis of objective quality metrics. The dataset includes a comprehensive benchmarking of **18 metrics** against the collected subjective scores, providing insights into their effectiveness and limitations in capturing distortions specific to compressed GS view synthesis.
 
-## Qualitative results
+## Dataset Contents
 
-Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/Scaffold-GS), and our codec applied to each baseline. Values under each image show PSNR (in dB) and model size (in megabytes). 
+GScomp-QA provides all the necessary data to reproduce the experiments, benchmark compression solutions, and evaluate objective quality metrics. The dataset is organized into several components, each targeting a specific aspect of GS compression and quality assessment:
+
++ [Stimuli](https://github.com/pedrogcmartin/GScomp-QA/tree/main/stimuli) Contains all generated video sequences used in the subjective study, including both reference (uncompressed) and compressed GS renderings.
+
++ [Compression Settings](https://github.com/pedrogcmartin/GScomp-QA/blob/main/settings.xlsx) Provides the parameters used for each GS compression solution, for every scene and quality level (HQ, MQ, LQ).
+
++ [Subjective Scores](https://github.com/pedrogcmartin/GScomp-QA/blob/main/dmos.xlsx) Includes the Differential Mean Opinion Scores (DMOS) obtained from the subjective study, representing the perceived quality of each stimulus.
+
++ [Objective Metrics](https://github.com/pedrogcmartin/GScomp-QA/blob/main/metrics.xlsx) Contains the scores of 18 objective quality metrics computed for all stimuli.
+
++ [Correlation Results](https://github.com/pedrogcmartin/GScomp-QA/blob/main/correlations.xlsx) Reports the correlation coefficients (PLCC, SROCC, RMSE, PWRC) between objective metrics and subjective scores.
+
++ [Non-Inferiority Test](https://github.com/pedrogcmartin/GScomp-QA/blob/main/non_inferiority_test.xlsx) Provides the statistical analysis results identifying cases where the compressed sequence quality is not perceptually inferior to the reference.
