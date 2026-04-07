@@ -44,17 +44,17 @@ GScomp-QA provides all the necessary data to reproduce the experiments, benchmar
 
 The rate-distortion (RD) performance plots allows for the benchmarking of the evaluated GS compression solutions across all visual scenes. The RD curves illustrate the trade-off between bitstream size (in megabytes or MB) and perceptual quality (DMOS), enabling a direct comparison of compression efficiency under different scene characteristics and representations.
 
-**Tanks and Temples**
+<p align="center"><strong>Tanks and Temples</strong></p>
 <p align="center"> <img src="imgs/train.svg" width="45%" /> <img src="imgs/truck.svg" width="45%" /> </p>
 
-**Deep Blending**
+<p align="center"><strong>Deep Blending</strong></p>
 <p align="center"> <img src="imgs/drjohnson.svg" width="45%" /> <img src="imgs/playroom.svg" width="45%" /> </p>
 
-**Mip-NeRF360 (Indoor)**
+<p align="center"><strong>Mip-NeRF360 (Indoor)</strong></p>
 <p align="center"> <img src="imgs/bonsai.svg" width="30%" /> <img src="imgs/counter.svg" width="30%" /> <img src="imgs/kitchen.svg" width="30%" /> </p>
 
-**Mip-NeRF360 (Outdoor)**
+<p align="center"><strong>Mip-NeRF360 (Outdoor)</strong></p>
 <p align="center"> <img src="imgs/bicycle.svg" width="30%" /> <img src="imgs/flowers.svg" width="30%" /> <img src="imgs/garden.svg" width="30%" /> </p>
 
-**Light Field (LF)**
+<p align="center"><strong>Light Field (LF)</strong></p>
 <p align="center"> <img src="imgs/africa.svg" width="30%" /> <img src="imgs/basket.svg" width="30%" /> <img src="imgs/ship.svg" width="30%" /> </p>
