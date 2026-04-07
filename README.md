@@ -2,6 +2,10 @@
    <h3 align="center">GScomp-QA: A Subjective Dataset for Quality Assessment of Compressed Gaussian Splatting</h3>
    <br />
 
+  Pedro Martin, António Rodrigues, João Ascenso, Maria Paula Queluz
+
+  Instituto de Telecomunicações, Instituto Superior Técnico, University of Lisbon
+
   <p align="center">
    <img src="imgs/pipeline.jpeg">
     <br />
