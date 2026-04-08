@@ -66,7 +66,7 @@ GScomp-QA captures a wide range of visual artifacts arising from both the view s
 
 <p align="center"><strong>Geometry Distortion</strong></p> <p align="center"> <img src="imgs/geom_ref.png" width="45%" /> <img src="imgs/geom_comp.png" width="45%" /> </p>
 
-Geometry distortions correspond to structural inaccuracies in the reconstructed scene, such as deformed surfaces or misaligned objects. These artifacts arise from both the GS synthesis process and compression, and are consistently observed for both uncompressed and uncompressed GS models.
+Geometry distortions correspond to structural inaccuracies in the reconstructed scene, such as deformed surfaces or misaligned objects. These artifacts arise from both the GS synthesis process and compression, and are consistently observed for both uncompressed and compressed GS models.
 
 <p align="center"><strong>Floaters</strong></p> <p align="center"> <img src="imgs/floater_ref.png" width="45%" /> <img src="imgs/floater_comp.png" width="45%" /> </p>
 
