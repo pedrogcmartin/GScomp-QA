@@ -61,24 +61,24 @@ The rate-distortion (RD) performance plots allows for the benchmarking of the ev
 
 ## Artifacts Characterization
 
-GScomp-QA captures a wide range of visual artifacts arising from both the view synthesis process and GS compression. Understanding these artifacts is essential for designing novel compression solutions and quality metrics. The main artifact types observed in the dataset are described below. For each case, an example is presented with the respective camera-captured image at the right side.
+GScomp-QA captures a wide range of visual artifacts arising from both the view synthesis process and GS compression. Understanding these artifacts is essential for designing novel compression solutions and quality metrics. The main artifact types observed in the dataset are described below. For each case, an example is presented with the respective camera-captured image at the left side.
 
-<p align="center"><strong>Geometry Distortion</strong></p> <p align="center"> <img src="imgs/geom_comp.png" width="45%" /> <img src="imgs/geom_ref.png" width="45%" /> </p>
+<p align="center"><strong>Geometry Distortion</strong></p> <p align="center"> <img src="imgs/geom_ref.png" width="45%" /> <img src="imgs/geom_comp.png" width="45%" /> </p>
 
-Geometry distortions correspond to structural inaccuracies in the reconstructed scene, such as deformed surfaces or misaligned objects. These artifacts arise from both the GS synthesis process and compression, and are consistently observed across both uncompressed baseline models and compression solutions.
+Geometry distortions correspond to structural inaccuracies in the reconstructed scene, such as deformed surfaces or misaligned objects. These artifacts arise from both the GS synthesis process and compression, and are consistently observed for both uncompressed and compressed GS models.
 
-<p align="center"><strong>Floaters</strong></p> <p align="center"> <img src="imgs/floater_comp.png" width="45%" /> <img src="imgs/floater_ref.png" width="45%" /> </p>
+<p align="center"><strong>Floaters</strong></p> <p align="center"> <img src="imgs/floater_ref.png" width="45%" /> <img src="imgs/floater_comp.png" width="45%" /> </p>
 
-Floaters are spurious Gaussian primitives that appear as small, disconnected elements floating in space. They are inherent to the GS representation and originate from the synthesis process, typically persisting across both uncompressed and compressed outputs. Except for compression solutions that apply Gaussian pruning techniques (such as LightGaussian).
+Floaters are spurious Gaussian primitives that appear as small, disconnected elements floating in space. They are inherent to the GS representation and originate from the synthesis process, and typically persist after GS compression. Compression solutions that apply Gaussian pruning techniques (such as LightGaussian and Reduced3DGS) often eliminate them.
 
-<p align="center"><strong>Color Shifting</strong></p> <p align="center"> <img src="imgs/color_comp.png" width="45%" /> <img src="imgs/color_ref.png" width="45%" /> </p>
+<p align="center"><strong>Color Shifting</strong></p> <p align="center"> <img src="imgs/color_ref.png" width="45%" /> <img src="imgs/color_comp.png" width="45%" /> </p>
 
 Color shifting refers to deviations in color reproduction, such as changes in hue or intensity. These artifacts are introduced by compression, particularly in color-oriented compression approaches (such as GSICO, SOG, and Compact3D).
 
-<p align="center"><strong>Blurring</strong></p> <p align="center"> <img src="imgs/blur_comp.png" width="45%" /> <img src="imgs/blur_ref.png" width="45%" /> </p>
+<p align="center"><strong>Blurring</strong></p> <p align="center"> <img src="imgs/blur_ref.png" width="45%" /> <img src="imgs/blur_comp.png" width="45%" /> </p>
 
 Blurring appears as a loss of fine details and texture sharpness. It is primarily caused by compression, especially in joint training and compression methods (such as Context-GS, HAC++, and Reduced3DGS), where regularization and quantization lead to smoother but less detailed reconstructions.
 
 <p align="center"><strong>Temporal Inconsistencies</strong></p>
 
-Temporal inconsistencies include flickering, unstable geometry, and view-dependent variations that become noticeable during camera motion. These artifacts originate from the synthesis process and are present in both baseline models and post-training compression solutions.
+Temporal inconsistencies include flickering, unstable geometry, and view-dependent variations that become noticeable during camera motion. These artifacts originate from the synthesis process and are present in both GS baseline models and post-training GS compression solutions.
