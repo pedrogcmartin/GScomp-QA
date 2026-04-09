@@ -14,7 +14,6 @@
 </div>
 GScomp-QA is a subjective quality assessment dataset designed to evaluate the perceptual impact of compression on Gaussian Splatting (GS) view synthesis. It provides a controlled benchmarking framework in which compression-induced distortions are isolated from artifacts inherent to the synthesis process. This is achieved by using videos rendered from both compressed and uncompressed GS models, enabling direct and consistent perceptual comparisons.
 
-
 GScomp-QA is designed to support three main objectives:
 
 + Benchmarking GS compression methods under consistent perceptual criteria
