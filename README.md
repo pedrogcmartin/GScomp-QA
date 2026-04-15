@@ -1,5 +1,5 @@
 <div align="center">
-   <h1>GS<img src="https://img.shields.io/badge/comp-red?style=flat-square" alt="comp">--<img src="https://img.shields.io/badge/QA-green?style=flat-square" alt="QA">: A Subjective Dataset for Quality Assessment of Compressed Gaussian Splatting</h1>
+   <h1>GScomp-QA: A Subjective Dataset for Quality Assessment of Compressed Gaussian Splatting</h1>
    <br />
 
    Pedro Martin, António Rodrigues, João Ascenso, Maria Paula Queluz
